@@ -1,0 +1,22 @@
+.edu-grid { display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; }
+.edu-card { background:var(--bg2); border:1px solid var(--border); border-radius:14px; padding:1.75rem; transition:border-color 0.3s,box-shadow 0.3s; }
+.edu-card:hover { border-color:var(--lime); box-shadow:0 0 24px rgba(163,230,53,0.2); }
+.edu-degree { font-family:var(--font-display); font-weight:700; font-size:1rem; margin-bottom:0.3rem; }
+.edu-school { color:var(--lime); font-size:0.85rem; font-weight:500; margin-bottom:0.25rem; }
+.edu-year { font-family:var(--font-mono); font-size:0.75rem; color:var(--muted); margin-bottom:0.75rem; }
+.edu-note { color:var(--muted); font-size:0.85rem; line-height:1.65; }
+
+.cert-list { display:flex; flex-wrap:wrap; gap:1rem; }
+.cert-item { background:var(--bg2); border:1px solid var(--border); border-radius:10px; padding:1rem 1.5rem; display:flex; align-items:center; gap:0.75rem; transition:border-color 0.3s,box-shadow 0.3s; }
+.cert-item:hover { border-color:var(--violet); box-shadow:0 0 16px var(--glow-v); }
+.cert-icon { font-size:1.25rem; }
+.cert-name { font-size:0.9rem; font-weight:500; }
+.cert-issuer { font-size:0.75rem; color:var(--muted); }
+
+.lang-grid { display:flex; flex-wrap:wrap; gap:1.25rem; }
+.lang-card { background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:1.25rem 2rem; text-align:center; min-width:130px; transition:border-color 0.3s,box-shadow 0.3s; }
+.lang-card:hover { border-color:var(--cyan); box-shadow:0 0 18px var(--glow-c); }
+.lang-name { font-family:var(--font-display); font-weight:600; font-size:1rem; }
+.lang-level { font-size:0.75rem; color:var(--muted); margin-top:0.25rem; }
+
+@media(max-width:768px) { .edu-grid { grid-template-columns:1fr; } }

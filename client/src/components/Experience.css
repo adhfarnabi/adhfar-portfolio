@@ -1,0 +1,11 @@
+.exp-section { background: var(--bg2); }
+.exp-card { background: var(--bg3); border: 1px solid var(--border); border-radius: 16px; padding: 2rem; display: grid; grid-template-columns: auto 1fr; gap: 1.5rem; margin-bottom: 1.5rem; transition: border-color 0.3s, box-shadow 0.3s; }
+.exp-card:hover { border-color: var(--coral); box-shadow: 0 0 28px var(--glow-r); }
+.exp-dot { width:14px; height:14px; border-radius:50%; margin-top:6px; background:linear-gradient(135deg,var(--coral),var(--violet)); box-shadow:0 0 12px var(--glow-r); flex-shrink:0; }
+.exp-role { font-family:var(--font-display); font-weight:600; font-size:1.1rem; margin-bottom:0.25rem; }
+.exp-company { color:var(--coral); font-size:0.9rem; font-weight:500; margin-bottom:0.25rem; }
+.exp-period { font-family:var(--font-mono); font-size:0.75rem; color:var(--muted); margin-bottom:1rem; }
+.exp-bullets { list-style:none; }
+.exp-bullets li { color:var(--muted); font-size:0.9rem; line-height:1.7; padding-left:1.25rem; position:relative; margin-bottom:0.5rem; }
+.exp-bullets li::before { content:'▹'; position:absolute; left:0; color:var(--violet); font-size:0.85rem; }
+@media(max-width:768px) { .exp-card { grid-template-columns:1fr; } .exp-dot { display:none; } }
